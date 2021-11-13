@@ -10,4 +10,11 @@ export class AddItemsComponent  {
   @Input()foodItems: Food[] = [];
   @Input()drinkItems: Food[] = [];
 
+  onAddDrinks($event: Food[]) {
+    this.drinkItems = $event;
+  }
+
+  onAddFoodItems($event: Food[]) {
+    this.foodItems = $event;
+  }
 }

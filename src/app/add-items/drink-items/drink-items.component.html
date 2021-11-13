@@ -1,4 +1,4 @@
-<div class="card mb-3 foodCard" style="max-width: 540px;cursor: pointer" *ngFor="let drink of drinkItems let i = index">
+<div (click)="onClickDrinks(i)" class="card mb-3 foodCard" style="max-width: 540px;cursor: pointer" *ngFor="let drink of drinkItems let i = index">
   <div class="row no-gutters">
     <div class="col-md-4  pt-2 ">
       <img [src]="drink.imageUrl" [alt]="drink.name">

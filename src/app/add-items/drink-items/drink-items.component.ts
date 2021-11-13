@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Food} from "../../../shared/food.model";
 
 @Component({
@@ -8,5 +8,10 @@ import {Food} from "../../../shared/food.model";
 })
 export class DrinkItemsComponent  {
   @Input() drinkItems: Food[] = [];
+  @Output() addDrinks = new EventEmitter<Food[]>();
 
+  onClickDrinks(index: number) {
+    this.drinkItems[index].number++;
+    this.addDrinks.emit(this.drinkItems);
+  }
 }
