@@ -1,10 +1,20 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-6">
-      <app-order-details></app-order-details>
+      <app-order-details
+        [foodItems]="foodItems"
+        [drinkItems]="drinkItems"
+        (changeFoodsItem)="onChangeDeleteFoodsItem($event)"
+        (changeDrinksItem)="onChangeDeleteDrinksItem($event)"
+      ></app-order-details>
     </div>
     <div class="col-6">
-      <app-add-items [foodItems]="foodItems" [drinkItems]="drinkItems"></app-add-items>
+      <app-add-items
+        [foodItems]="foodItems"
+        [drinkItems]="drinkItems"
+        (onAddFoodsItem)="onChangeAddFoodsItem($event)"
+        (onAddDrinksItem)="onChangeAddDrinksItem($event)"
+      ></app-add-items>
     </div>
   </div>
 </div>

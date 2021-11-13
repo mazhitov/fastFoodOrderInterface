@@ -17,4 +17,24 @@ export class AppComponent {
     new Food('Tea', 0, 20, '../../assets/drinks/tea.png'),
     new Food('Cola', 0, 50, '../../assets/drinks/cola.png'),
   ];
+
+  onChangeDeleteFoodsItem($event: Food[]) {
+    this.foodItems = $event;
+    console.log(this.foodItems);
+  }
+
+  onChangeDeleteDrinksItem($event: Food[]) {
+    this.drinkItems = $event;
+    console.log(this.drinkItems);
+  }
+
+  onChangeAddFoodsItem($event: Food[]) {
+    this.foodItems = $event;
+    console.log(this.foodItems);
+  }
+
+  onChangeAddDrinksItem($event: Food[]) {
+    this.drinkItems = $event;
+    console.log(this.drinkItems);
+  }
 }
