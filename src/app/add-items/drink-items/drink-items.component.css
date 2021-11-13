@@ -1,0 +1,4 @@
+.foodCard:hover {
+  border: 1px solid blue;
+  box-shadow: 0 0 11px 3px cornflowerblue;
+}

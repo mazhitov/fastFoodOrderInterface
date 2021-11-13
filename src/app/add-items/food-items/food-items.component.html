@@ -1,6 +1,6 @@
-<div class="card mb-3" style="max-width: 540px;cursor:pointer;" *ngFor="let food of foodItems let i = index">
+<div class="card mb-3 foodCard" style="max-width: 540px;cursor:pointer;" *ngFor="let food of foodItems let i = index">
   <div class="row no-gutters">
-    <div class="col-md-4">
+    <div class="col-md-4 pt-2 pl-1">
       <img [src]="food.imageUrl" [alt]="food.name">
     </div>
     <div class="col-md-8">

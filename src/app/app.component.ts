@@ -13,8 +13,8 @@ export class AppComponent {
     new Food('Fries', 0, 5, '../../assets/fastFoods/french-fries.png'),
   ];
   drinkItems: Food[] = [
-    new Food('Cola', 0, 50, '../../assets/burger/meat.png'),
-    new Food('Tea', 0, 20, '../../assets/burger/cheese.png'),
-    new Food('Coffee', 0, 5, '../../assets/burger/salad.png'),
+    new Food('Coffee', 0, 5, '../../assets/drinks/coffee-cup.png'),
+    new Food('Tea', 0, 20, '../../assets/drinks/tea.png'),
+    new Food('Cola', 0, 50, '../../assets/drinks/cola.png'),
   ];
 }
