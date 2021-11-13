@@ -1,1 +1,20 @@
-<p>order-details works!</p>
+<form>
+  <fieldset>
+    <legend>Order Details</legend>
+    <app-detail
+      [drinksItem]="drinkItems"
+      [foodsItem]="foodItems"
+      (changeFoodsItem)="onChangeFoodsItem($event)"
+      (changeDrinksItem)="onChangeDrinksItem($event)"
+    ></app-detail>
+
+    <hr>
+
+    <div *ngIf="getTotalSum()>0" class="row">
+      <strong class="col-5">Total price:</strong> <span class="col-6 text-center">{{ getTotalSum() }}</span>
+    </div>
+  </fieldset>
+</form>
+
+
+
