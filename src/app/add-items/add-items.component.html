@@ -1,6 +1,13 @@
 <form>
   <fieldset>
     <legend>Add Items</legend>
-
+    <div class="row">
+      <div class="col-7 pr-2">
+        <app-food-items [foodItems]="foodItems"></app-food-items>
+      </div>
+      <div class="col-5 pl-2">
+        <app-drink-items [drinkItems] = drinkItems></app-drink-items>
+      </div>
+    </div>
   </fieldset>
 </form>

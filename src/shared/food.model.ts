@@ -3,6 +3,7 @@ export class Food {
     public name: string,
     public number: number,
     public price: number,
+    public imageUrl: string,
   ) {}
 
   getTotal() {

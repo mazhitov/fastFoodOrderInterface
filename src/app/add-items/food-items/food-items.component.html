@@ -1,1 +1,13 @@
-<p>food-items works!</p>
+<div class="card mb-3" style="max-width: 540px;cursor:pointer;" *ngFor="let food of foodItems let i = index">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img [src]="food.imageUrl" [alt]="food.name">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body pl-1 px-1">
+        <h5 class="card-title">{{ food.name }}</h5>
+        <p class="card-text">Price: {{ food.price }} KGS</p>
+      </div>
+    </div>
+  </div>
+</div>
